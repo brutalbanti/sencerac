@@ -1,0 +1,151 @@
+.section-service {
+    padding: 100px 0;
+}
+
+.service-content {}
+
+.service-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+.service-item {
+    height: 398px;
+    background: white;
+    border-radius: 20px;
+}
+
+.service-item.pink {
+    background: rgba(243, 227, 239, 1);
+}
+
+.service-item.green {
+    background: rgba(232, 235, 216, 1);
+}
+
+.service-item.green .service-item__btn {
+    background: rgba(154, 162, 145, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.service-item.pink .service-item__number {
+    color: rgba(216, 192, 209, 1);
+}
+
+.service-item__top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 4px solid #F1F5F1;
+    padding: 25px 40px 18px 40px;
+    align-items: center;
+}
+
+.service-item__left {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.service-item__number {
+    font-size: 80px;
+    font-weight: 500;
+    color: rgba(95, 113, 98, 0.15);
+}
+
+.service-item__text {}
+
+.service-item__name {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+
+}
+
+.service-item__price {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.8px;
+}
+
+.service-item__btn {
+    padding: 15px 29px;
+    background: rgba(232, 235, 216, 1);
+    border-radius: 60px;
+    position: relative;
+    transition: left 0.3s;
+    left: 0;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+    color: rgba(95, 113, 98, 1);
+}
+
+.service-item__btn:hover {
+    left: 5px;
+}
+
+.service-item__btn span {
+    display: none;
+}
+
+.service-item__btn.white {
+    background: white;
+    color: rgba(176, 129, 162, 1);
+}
+
+.service-item__description {
+    padding: 40px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.pink {}
+
+.white {}
+
+.green {}
+
+@media(max-width: 991.98px) {
+    .section-service {
+        padding: 60px 0;
+    }
+
+    .service-item {
+        height: auto;
+    }
+
+    .service-items {
+        grid-template-columns: 1fr;
+    }
+
+    .service-item__top {
+        padding: 21px 30px;
+    }
+
+    .service-item__description {
+        padding: 35px 30px;
+    }
+}
+
+@media(max-width: 767.98px) {
+    .service-item__top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 23px;
+        padding: 36px 30px 21px 20px;
+    }
+
+    .service-item__btn {
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .service-item__btn span {
+        display: block;
+    }
+}

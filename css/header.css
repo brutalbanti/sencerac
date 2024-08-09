@@ -1,0 +1,251 @@
+.wrapper {
+    position: relative;
+}
+
+.header.fullscreen {
+    height: 100vh;
+}
+.header {
+    padding: 36px 0 0 0;
+    background: url('../assets/fon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.header__nav {
+    margin: 0 30px 0 124px;
+}
+
+.header__logo {}
+
+.header__burger {}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-right-wrap {
+    display: flex;
+    gap: 66px;
+    align-items: center;
+}
+
+.header__list {
+    display: flex;
+    gap: 32px;
+}
+
+.header__logo.mobile {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.header__item {}
+
+.header__link {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20.71px;
+    color: black;
+}
+
+.header__btn {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20.71px;
+    padding: 12px 35px;
+    background: rgba(216, 192, 209, 1);
+    border-radius: 90px;
+    color: white;
+    transition: all 0.3s;
+}
+
+.header__btn:hover {
+    background: rgba(190, 129, 177, 1);
+}
+
+.header-content__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 240px 0 170px 0;
+    flex-direction: column;
+}
+
+.header__title {
+    font-family: "Taviraj", serif;
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 74.4px;
+    text-align: center;
+    max-width: 1062px;
+    width: 100%;
+    position: relative;
+}
+
+.header__title::before {
+    position: absolute;
+    content: "";
+    background: url('../assets/title-image.svg');
+    background-repeat: no-repeat;
+    width: 288px;
+    height: 208px;
+    left: 50%;
+    transform: translate(-50%);
+    top: -110px;
+}
+
+.header__title.services::before {
+    content: none;
+}
+
+.header__description {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 33px;
+    text-align: center;
+    margin-top: 22px;
+    max-width: 840px;
+    width: 100%;
+}
+
+.header__description.services {
+    max-width: 625px;
+}
+
+.header-content__btn {
+    margin-top: 34px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.41px;
+    padding: 15px 44px;
+    background: rgba(159, 168, 141, 1);
+    border-radius: 90px;
+    color: white;
+    transition: all 0.3s;
+}
+
+.header-content__btn:hover {
+    background: rgba(232, 235, 216, 1);
+    color: black;
+}
+
+@media(min-width: 1254.98px) {
+
+    .header__container.mobile,
+    .header-close-menu {
+        display: none;
+    }
+}
+
+@media(max-width: 1254.98px) {
+    .header__nav {
+        margin: 0;
+    }
+
+    .header__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__nav {
+        position: fixed;
+        transform: translateX(300%);
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: white;
+        flex-direction: column;
+        justify-content: inherit;
+        align-items: flex-start;
+        padding: 40px 30px;
+        transition: all 0.5s;
+        z-index: 99;
+    }
+
+    .header__nav.active {
+        transform: translateX(0);
+    }
+
+    .header-close-menu {
+        position: absolute;
+        top: 50px;
+        right: 30px;
+        width: 20px;
+    }
+
+    .header__logo.mobile {
+        order: 1;
+        margin-bottom: 30px;
+        position: static;
+        transform: translate(0);
+    }
+
+    .header__list {
+        flex-direction: column;
+        gap: 14px;
+        order: 2;
+        margin-top: 14px;
+    }
+
+    .header__link {
+        font-size: 20px;
+    }
+
+    .header-right-wrap {
+        order: 3;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .header-wrap-btn {
+        margin-top: 20px;
+        order: 3;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .header__btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 767.98px) {
+    .header {
+        background: url('../assets/fon-mobile.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .header-content__container {
+        padding: 195px 0 155px 0;
+    }
+
+    .header__title {
+        font-size: 32px;
+        line-height: 38.4px;
+    }
+
+    .header__title::before {
+        top: -100px;
+        width: 200px;
+        height: 145px;
+        background-size: cover;
+    }
+
+    .header__description {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

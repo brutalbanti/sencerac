@@ -1,0 +1,128 @@
+/* BOOKING SECTION */
+
+.booking-section {
+    padding: 110px 0;
+    background: rgba(243, 227, 239, 1);
+}
+
+.booking__container {}
+
+.booking-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 138px;
+}
+
+.booking-content__image {
+    background: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    width: 405px;
+    height: 573px;
+    border-radius: 370px 370px 0 0;
+    padding: 20px;
+}
+.booking-content__image img {
+    height: 100%; /* Make image height match the container's height */
+    object-fit: cover;
+    border-radius: 370px 370px 0 0;
+    overflow: hidden;
+    object-position: center;
+}
+
+.booking-content__text {}
+
+.booking-content-text__img {}
+
+.booking-content__title {
+    font-family: "Taviraj", serif;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 55.2px;
+    margin-top: 18px;
+    max-width: 516px;
+    width: 100%;
+}
+
+.booking-content__description {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-top: 27px;
+    max-width: 511px;
+    width: 100%;
+}
+
+.booking-content__btn {
+    margin-top: 27px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.01px;
+    padding: 12px 43px;
+    color: rgba(243, 227, 239, 1);
+    background: rgba(159, 168, 141, 1);
+    border-radius: 60px;
+    transition: all 0.3s;
+}
+
+.booking-content__btn:hover {
+    background: rgba(216, 192, 209, 1);
+}
+
+@media(max-width: 991.98px) {
+    .booking-section {
+        padding: 60px 0 170px 0;
+    }
+
+    .padding-section {
+        height: 380px;
+    }
+
+    .booking-content__image {
+        order: 2;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        bottom: -490px;
+    }
+
+    .booking-content__image img {
+    }
+
+    .booking-content__image {
+        width: 300px;
+        height: 424px;
+    }
+
+    .booking-content__text {
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .booking-content {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .booking-content__title,
+    .booking-content__description {
+        text-align: center;
+        margin-top: 22px;
+    }
+
+    .booking-content__btn {
+        margin-top: 40px;
+    }
+}
+
+@media(max-width: 767.98px) {
+    .booking-content__title {
+        font-size: 32px;
+        line-height: 38.4px;
+    }
+}

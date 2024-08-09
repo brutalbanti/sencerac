@@ -1,0 +1,701 @@
+.about-section {
+    padding-bottom: 73px;
+}
+
+.about-content {
+    padding: 120px 207px 245px 207px;
+    border-radius: 0 0 1000px 1000px;
+    background: rgba(255, 255, 255, 1);
+    max-width: 1051px;
+    width: 100%;
+    position: relative;
+}
+
+.about-content::after {
+    position: absolute;
+    content: "";
+    background: url('../assets/about/02.svg');
+    width: 180px;
+    height: 120px;
+    right: -20%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.about-content__image {
+    position: absolute;
+    bottom: 554px;
+    left: 80%;
+    border-radius: 370px 370px 0 0;
+    padding: 20px;
+    background: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    width: 370px;
+    height: 584px;
+}
+
+.about-content__image img {
+    height: 100%;
+    /* Make image height match the container's height */
+    object-fit: cover;
+    border-radius: 370px 370px 0 0;
+    overflow: hidden;
+    object-position: right;
+}
+
+.about-content__title {
+    font-family: "Taviraj", serif;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 40.8px;
+    margin-bottom: 58px;
+}
+
+.about-content__description {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 20px;
+    max-width: 572px;
+    width: 100%;
+}
+
+.about-content__bottom {
+    display: flex;
+    align-items: center;
+    margin-top: 58px;
+    gap: 30px;
+}
+
+.about-content__left {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+    max-width: 182px;
+    width: 100%;
+}
+
+
+@media(max-width: 1199.98px) {
+    .about-content {
+        max-width: 800px;
+    }
+}
+
+@media(max-width: 991.98px) {
+    .about-section {
+        padding-bottom: 452px;
+    }
+
+    .about-content::after {
+        content: none;
+    }
+
+    .about-content {
+        max-width: 100%;
+        padding: 65px 180px 152px;
+    }
+
+    .about-content__image {
+        position: absolute;
+        bottom: -345px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .about-content__image {
+        width: 300px;
+        height: 440px;
+    }
+
+    .about-content__right {
+        display: none;
+    }
+
+}
+
+@media(max-width: 767.98px) {
+    .about-content {
+        padding: 65px 90px 152px;
+    }
+
+    .about-content__title {
+        font-size: 32px;
+        line-height: 38.4px;
+        text-align: center;
+    }
+}
+
+@media(max-width: 474.98px) {
+    .about-content {
+        padding: 65px 42px 152px;
+    }
+}
+
+/* ======================================================== */
+
+.naturopathy-section {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.naturopathy-content {
+    border-radius: 1000px 1000px 0 0;
+    background: white;
+    padding: 210px 203px 140px 270px;
+    max-width: 1051px;
+    width: 100%;
+    position: relative;
+}
+
+.naturopathy-content__image {
+    position: absolute;
+    bottom: 151px;
+    left: -20%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    width: 370px;
+    height: 584px;
+    border-radius: 370px 370px 0 0;
+    padding: 20px;
+    background: white;
+}
+
+.naturopathy-content__image img {
+    height: 100%;
+    /* Make image height match the container's height */
+    object-fit: cover;
+    border-radius: 370px 370px 0 0;
+    overflow: hidden;
+    object-position: center;
+    transform: scaleX(-1);
+}
+
+.naturopathy-content::before {
+    position: absolute;
+    content: "";
+    background: url('../assets/naturopathy/02.svg');
+    width: 180px;
+    height: 120px;
+    left: -25%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.naturopathy-content__title {
+    font-family: "Taviraj", serif;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 55.2px;
+    max-width: 340px;
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+.naturopathy-content__description {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+    max-width: 578px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+@media(max-width: 1199.98px) {
+    .naturopathy-content {
+        max-width: 800px;
+    }
+}
+
+@media(max-width: 991.98px) {
+    .naturopathy-section {
+        padding-bottom: 408px;
+    }
+
+    .naturopathy-content::before {
+        content: none;
+    }
+
+    .naturopathy-content {
+        max-width: 100%;
+        padding: 120px 200px 152px;
+    }
+
+    .naturopathy-content__image {
+        bottom: -345px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .naturopathy-content__image {
+        width: 300px;
+        height: 440px;
+    }
+
+    .about-content__right {
+        display: none;
+    }
+
+}
+
+
+@media(max-width: 767.98px) {
+    .naturopathy-content {
+        padding: 65px 90px 152px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .naturopathy-content__title {
+        font-size: 32px;
+        line-height: 38.4px;
+        text-align: center;
+        max-width: 236px;
+    }
+}
+
+@media(max-width: 474.98px) {
+    .naturopathy-content {
+        padding: 65px 42px 152px;
+    }
+}
+
+/* SERVICE SECTION */
+
+.service-section {
+    background: rgba(248, 248, 248, 1);
+    padding: 100px 0;
+}
+
+.service__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.service__title {
+    font-family: 'Taviraj', serif;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 55.2px;
+    text-align: center;
+}
+
+.service__description {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+    text-align: center;
+    max-width: 524px;
+    width: 100%;
+    margin-top: 24px;
+}
+
+.service__content {
+    display: flex;
+    margin-top: 64px;
+    justify-content: center;
+    gap: 100px;
+    width: 100%;
+    margin-top: 64px;
+}
+
+.service-items {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 585px;
+    width: 100%;
+}
+
+.service-item {
+    padding: 25px 25px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.service-item:first-child {
+    border-radius: 20px 20px 0 0;
+}
+
+.service-item:last-child {
+    border-radius: 0 0 20px 20px;
+}
+
+.service-item__left {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.service-item__number {
+    font-size: 80px;
+    font-weight: 500;
+    color: rgba(95, 113, 98, 0.15);
+}
+
+.service-item__text {}
+
+.service-item__name {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+}
+
+.service-item__price {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.8px;
+
+}
+
+.service-item__btn-wrap {}
+
+.service-item__btn {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    padding: 12px 32px;
+    background: rgba(159, 168, 141, 1);
+    border-radius: 60px;
+    color: white;
+    transition: all 0.3s;
+}
+
+.service-item__btn:hover {
+    background: rgba(216, 192, 209, 1);
+}
+
+.service-item__btn.purple {
+    background: rgba(216, 192, 209, 1);
+}
+
+.service-item__btn.purple:hover {
+    background: rgba(232, 235, 216, 1);
+}
+
+.service-image {
+    width: 370px;
+    border-radius: 370px 370px 0 0;
+    background: white;
+    padding: 20px;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 370px 370px 0 0;
+}
+
+@media(max-width: 1199.98px) {
+    .service-image {
+        display: none;
+    }
+
+}
+
+@media(max-width: 991.98px) {
+    .service-section {
+        padding: 50px 0;
+    }
+
+    .service-items {
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 767.98px) {
+    .service__title {
+        font-size: 32px;
+        line-height: 38.4px;
+    }
+
+    .service__description {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 14px;
+        max-width: 311px;
+    }
+
+    .service__content {
+        margin-top: 45px;
+    }
+
+    .service-item {
+        flex-direction: column;
+        gap: 25px;
+        justify-content: inherit;
+        align-items: inherit;
+    }
+
+    .service-item__btn {
+        width: 100%;
+        display: block;
+    }
+
+    .service-item__left {
+        gap: 10px;
+    }
+}
+
+/* BLOGS SECTION */
+
+.blogs-section {
+    padding: 100px 0;
+    background: white;
+}
+
+.blogs__container {}
+
+.blogs__title {
+    font-family: 'Taviraj', serif;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 55.2px;
+    text-align: center;
+}
+
+.blogs__items {
+    margin-top: 88px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.blogs-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blogs-item__img-wrap {
+    width: 232px;
+    height: 230px;
+    border-radius: 165px;
+}
+
+.blogs-item__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.blogs-item__img.full-border {
+    border-radius: 165px;
+}
+
+.blogs-item__img.semicircle {
+    border-radius: 165px 165px 0 0;
+}
+
+.blogs-item__date {
+    font-family: 'Taviraj', serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: center;
+    margin-top: 37px;
+    color: rgba(159, 168, 141, 1);
+}
+
+.blogs-item__title {
+    font-family: 'Taviraj', serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.6px;
+    text-align: center;
+    margin-top: 25px;
+    text-transform: uppercase;
+    max-width: 232px;
+    width: 100%;
+    color: black;
+}
+
+@media(max-width: 1199.98px) {
+    .blogs-section {
+        padding: 55px 0;
+    }
+
+    .blogs__items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 767.98px) {
+    .blogs__title {
+        font-size: 32px;
+        line-height: 38.4px;
+    }
+}
+
+@media(max-width: 676.98px) {
+    .blogs__items {
+        grid-template-columns: 1fr;
+        margin-top: 70px;
+    }
+
+    .blogs-item__title {
+        max-width: 100%;
+    }
+}
+
+
+/* CAROUSEL SECTION */
+.swiper {
+    width: 100%;
+    height: 550px;
+    box-sizing: border-box;
+}
+
+.section-carousel {
+    padding: 100px 0;
+}
+
+.carousel-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel__title {
+    font-family: 'Taviraj', serif;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 55.2px;
+    text-align: center;
+    max-width: 626px;
+    width: 100%;
+}
+
+.carousel-wrap {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.swiper-wrapper {
+    width: 100%;
+}
+
+.swiper-slide {
+    background: white;
+    border-radius: 250px;
+    display: flex;
+    gap: 64px;
+    padding: 130px;
+    width: 1060px;
+    height: 481px;
+}
+
+.swiper-slide__icon {}
+
+.swiper-slide__text {}
+
+.swiper-slide__description {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+    max-width: 518px;
+    width: 100%;
+}
+
+.swiper-slide__name {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+    margin-top: 25px;
+}
+
+.swiper-pagination {}
+
+.swiper-pagination-bullet {
+    width: 18px;
+    height: 18px;
+    background: white;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: rgba(154, 162, 145, 1);
+}
+
+@media(max-width: 991.98px) {
+    .section-carousel {
+        padding: 50px 0;
+    }
+
+    .carousel-wrap {
+        margin-top: 34px;
+    }
+
+    .swiper {
+        height: 440px;
+        width: 95vw;
+    }
+
+    .swiper-slide {
+        width: 100%;
+        border-radius: 60px;
+        padding: 85px 35px;
+        flex-direction: column;
+        align-items: center;
+        max-height: 380px;
+        height: 100%;
+    }
+
+    .swiper-slide__icon {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 0;
+        top: 51px;
+    }
+
+    .swiper-slide__icon img {
+        width: 77px;
+    }
+
+    .swiper-slide__description {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        z-index: 1;
+        position: relative;
+    }
+
+    .swiper-slide__name {
+        font-size: 18px;
+        line-height: 27px;
+        text-align: center;
+    }
+
+}
+
+@media(max-width: 767.98px) {
+    .carousel__title {
+        font-size: 32px;
+        line-height: 38.4px;
+    }
+}
+
+@media(max-width: 440.98px) {
+    .swiper {
+        height: 550px;
+    }
+
+    .swiper-slide {
+        max-height: 500px;
+    }
+}

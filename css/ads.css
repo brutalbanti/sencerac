@@ -1,0 +1,48 @@
+.ads__section {
+    overflow: hidden;
+    background: rgba(159, 168, 141, 1);
+    display: flex;
+    width: 100vw;
+    position: relative;
+}
+
+.ads__section.purple {
+    background: rgba(216, 192, 209, 1);
+}
+
+.ads__content {
+    display: flex;
+    gap: 40px;
+    background: rgba(159, 168, 141, 1);
+    padding: 21px 0;
+    white-space: nowrap;
+    width: 100%;
+    position: relative;
+    animation: scroll-left 10s linear infinite;
+}
+
+.ads__content.purple {
+    background: rgba(216, 192, 209, 1);
+}
+
+.ads__text {
+    display: flex;
+    gap: 40px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    color: white;
+    align-items: center;
+    animation: marquee 10000ms linear infinite;
+
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-104.5%);
+    }
+}
